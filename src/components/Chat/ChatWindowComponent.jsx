@@ -7,8 +7,8 @@ const ChatWindowCommon = ({ messages, username, chatEndRef }) => {
         <Box
             sx={{
                 width: '80%',
-                minHeight: '400px',
-                maxHeight: '401px',
+                minHeight: '530px',
+                maxHeight: '531px',
                 marginBottom: '20px',
                 margin: 'auto',
                 padding: '10px',
