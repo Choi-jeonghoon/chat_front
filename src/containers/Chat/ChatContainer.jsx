@@ -12,7 +12,7 @@ const ChatContainer = () => {
 
     return (
         <Container maxWidth="sm" style={{ marginTop: '50px' }}>
-            <Typography sx={{ fontSize: '35px', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} align="center" gutterBottom>실시간 채팅</Typography>
+            <Typography sx={{ fontSize: '35px', fontWeight: 'bold', color: '#b0c4de ', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} align="center" gutterBottom>실시간 채팅</Typography>
 
             {/* 채팅 목록 */}
             <ChatWindowComponent
