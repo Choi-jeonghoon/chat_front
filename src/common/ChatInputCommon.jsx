@@ -1,9 +1,9 @@
 import React from 'react';
-import { TextField, Button } from '@mui/material';
+import { TextField, Button, Box } from '@mui/material';
 
 const ChatInputCommon = ({ username, messageInput, setUsername, setMessageInput, sendMessage }) => {
     return (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <Box style={{ display: 'flex', alignItems: 'center' }}>
             <TextField
                 type="text"
                 value={username}
@@ -25,7 +25,7 @@ const ChatInputCommon = ({ username, messageInput, setUsername, setMessageInput,
                 style={{ marginRight: '10px' }}
             />
             <Button variant="contained" color="primary" onClick={sendMessage}>전송</Button>
-        </div>
+        </Box>
     );
 };
 
