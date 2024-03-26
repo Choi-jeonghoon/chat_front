@@ -17,6 +17,10 @@ const useChat = () => {
     }, []);
 
     const sendMessage = () => {
+        if (!messageInput.trim()) {
+            alert('메시지를 입력해주세요!!')
+            return;
+        }
         const message = {
             username: username,
             text: messageInput

@@ -37,9 +37,9 @@ const ChatWindowCommon = ({ messages, username, chatEndRef }) => {
                             maxWidth: '70%',
                             wordWrap: 'break-word',
                         }}
-                    >
-                        {message.text}
-                    </Typography>
+                        // 개행 문자를 <br> 태그로 변환하여 표시하기 위해서 작성했다.
+                        dangerouslySetInnerHTML={{ __html: message.text.replace(/\n/g, '<br>') }}
+                    />
                     <Typography variant="caption" sx={{ marginTop: '5px', color: '#666' }}>
                         {message.username}
                     </Typography>
