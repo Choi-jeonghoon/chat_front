@@ -6,13 +6,15 @@ const ChatWindowCommon = ({ messages, username, chatEndRef }) => {
     return (
         <Box
             sx={{
+                width: '80%',
                 minHeight: '400px',
                 maxHeight: '401px',
                 marginBottom: '20px',
+                margin: 'auto',
                 padding: '10px',
                 overflowY: 'auto',
                 borderRadius: '10px',
-                backgroundColor: '#f9f9f9',
+                backgroundColor: 'none',
                 border: '5px solid grey',
                 boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
             }}

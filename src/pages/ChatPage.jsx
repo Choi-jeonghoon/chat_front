@@ -1,11 +1,12 @@
 import React from 'react';
 import ChatContainer from '../containers/Chat/ChatContainer';
+import { Box } from '@mui/material';
 
 function ChatPage() {
     return (
-        <div>
+        <Box>
             <ChatContainer />
-        </div>
+        </Box>
     );
 }
 

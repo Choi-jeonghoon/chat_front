@@ -5,8 +5,9 @@ const ChatInputCommon = ({ username, messageInput, setUsername, setMessageInput,
 
 
     return (
-        <Box style={{ display: 'flex', alignItems: 'flex-start' }}>
-            <Box style={{ width: '40%', margin: '5px' }}>
+        <Box sx={{ width: '90%', display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 'auto' }}>
+
+            <Box style={{ width: '20%', margin: '5px' }}>
                 <TextField
                     type="text"
                     value={username}
@@ -18,7 +19,8 @@ const ChatInputCommon = ({ username, messageInput, setUsername, setMessageInput,
                     style={{ width: 'auto' }}
                 />
             </Box>
-            <Box style={{ width: '100%', margin: '5px' }}>
+
+            <Box sx={{ width: '70%', marginRight: '10px' }}>
                 <TextField
                     multiline
                     type="text"
@@ -28,12 +30,13 @@ const ChatInputCommon = ({ username, messageInput, setUsername, setMessageInput,
                     fullWidth
                     variant="outlined"
                     size="small"
-                    inputProps={{ style: { minHeight: '10px' } }}
+                    inputProps={{ style: { minHeight: '10px', width: '100%' } }}
                 />
             </Box>
-            <Box style={{ width: '20%', margin: '5px' }}>
-                <Button style={{ width: '100%' }} variant="contained" color="primary" onClick={sendMessage}>전송</Button>
+            <Box style={{ width: '10%' }}>
+                <Button style={{ width: '100%', height: '40px' }} variant="contained" color="primary" onClick={sendMessage}>전송</Button>
             </Box>
+
         </Box >
     );
 };

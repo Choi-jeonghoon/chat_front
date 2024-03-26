@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(234, 212, 183, 0.815);
+    background-image: url('assets/fr3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import ChatPage from './pages/ChatPage';
+import PublicRouter from './routes/PublicRouter';
 
 function App() {
-  return <ChatPage />;
+  return <PublicRouter />;
 }
 
 export default App;
